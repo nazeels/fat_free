@@ -20,7 +20,7 @@ namespace :ffcrm do
   desc "Prepare the database"
   task :setup => :environment do
     if ENV["PROCEED"] != 'true'
-      puts "\nYour database [#{ActiveRecord::Base.connection.current_database}] is about to be reset. If you choose to proceed all the existing data will be lost.\n\n"
+      #	 puts "\nYour database [#{ActiveRecord::Base.connection.current_database}] is about to be reset. If you choose to proceed all the existing data will be lost.\n\n"
       proceed = false
       loop do
         print "Continue [yes/no]: "
